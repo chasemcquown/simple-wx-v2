@@ -4,7 +4,9 @@
 
 :root {
     --btns: #25F67C;
-    --card-border: #30EBE7;
+    --card-shadows: #30EBE7;
+    --button-shadows: ;
+    --card-bg: #258BF6;
 }
 
 
@@ -12,7 +14,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Poppins';
-    background: rgba(0, 0, 0, 0.5) url('images/pyrenees-g1cb71bc45_1920.jpg') no-repeat center;
+    background: rgba(0, 0, 0, 0.6) url('images/pyrenees-g1cb71bc45_1920.jpg') no-repeat center;
     background-blend-mode: darken;
 }
 
@@ -28,18 +30,25 @@ header {
     max-height: 80px;
 }
 
-.search-container {
-    border: 5px;
-    border-color: var(--card-border);
-    border-style: solid;
-    font-size: 2rem;
+.the-parent {
     margin-top: 2%;
+    margin-bottom: 10%;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+input {
+    font-size: large;
+}
+
+.search-container {
+    background-color: var(--card-bg);
+    font-size: 2rem;
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 3%;
     padding-bottom: 3%;
+    box-shadow: 10px 10px var(--card-shadows);
 }
 
 button {
@@ -53,11 +62,29 @@ button {
     font-size: 16px;
     font-weight: 900;
     padding: 2%;
+    box-shadow: 5px 5px var(--shadows);
 }
 
 button:hover {
     border: 5px;
-    border-color: var(--btns);
+    border-color: var(--card-shadows);
     border-style: solid;
     color: var(--btns);
+}
+
+.current-conditions {
+    background-color: none;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+}
+
+.five-day {
+    color: black;
+}
+
+.days {
+    background-color: white;
 }

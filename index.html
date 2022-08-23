@@ -22,14 +22,63 @@
             </div>
     </header>
 
-    <div class="search-container">
-        <h3>Search by City Name</h3>
-        <form>
-            <div class="mb-3">
-              <input id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="the-parent">
+
+        <!-- the search container -->
+        <div class="search-container">
+            <h3>Search by City Name</h3>
+            <form>
+                <div class="mb-3">
+                <input id="city" placeholder="San Diego">
+                </div>
+                <button type="submit" id="search-btn">go!</button>
+            </form>
+        </div>
+
+        <!-- the current condtions container -->
+        <div class="current-conditions" id="current-weather">
+            <img src="" alt="" id="current-conditions-icon">
+            <p id="conditions-description" style="font-size: medium; font-weight: bold;"></p>
+            <p id="current-temp" style="font-size: medium; font-weight: bold;"></p>
+            <p id="current-humidity" style="font-size: medium; font-weight: bold;"></p>
+            <p id="current-wind" style="font-size: medium; font-weight: bold;"></p>
+        </div>
+
+        <!-- the 5 day forecast container -->
+        <div class="five-day">
+            <div class="days">
+                <p id="day-one-date"></p>
+                <!-- <img id="day-one-icon"> -->
+                <p id="day-one-temp"></p>
+                <p id="day-one-wind"></p>
+                <p id="day-one-humidity"></p>
             </div>
-            <button type="submit">go!</button>
-          </form>
+            <div class="days">
+                <p id="day-two-date"></p>
+                <p id="day-two-temp"></p>
+                <p id="day-two-wind"></p>
+                <p id="day-two-humidity"></p>
+            </div>
+            <div class="days">
+                <p id="day-three-date"></p>
+                <p id="day-three-temp"></p>
+                <p id="day-three-wind"></p>
+                <p id="day-three-humidity"></p>
+            </div>
+            <div class="days">
+                <p id="day-four-date"></p>
+                <p id="day-four-temp"></p>
+                <p id="day-four-wind"></p>
+                <p id="day-four-humidity"></p>
+            </div>
+            <div class="days">
+                <p id="day-five-date"></p>
+                <p id="day-five-temp"></p>
+                <p id="day-five-wind"></p>
+                <p id="day-five-humidity"></p>
+            </div>
+        </div>
+
     </div>
     
 <script src="assets/script.js"></script>

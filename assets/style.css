@@ -42,7 +42,9 @@ input {
 }
 
 .search-container {
-    background-color: var(--card-bg);
+    border: 5px;
+    border-style: solid;
+    border-color: white;
     font-size: 2rem;
     padding-left: 2%;
     padding-right: 2%;
@@ -72,13 +74,38 @@ button:hover {
     color: var(--btns);
 }
 
+.recent-btn {
+    width:30%;
+    display:block;
+    border: 5px;
+    border-color: var(--card-shadows);
+    border-style: solid;
+    background: none;
+    color: var(--card-shadows);
+    font-size: 16px;
+    font-weight: 900;
+    padding: 2%;
+    margin-top: 2%;
+    box-shadow: 5px 5px var(--shadows);
+}
+
+.recent-btn:hover {
+    border: 5px;
+    border-color: #20A7D4;
+    border-style: solid;
+    color: #20A7D4;
+}
+
 .current-conditions {
     background-color: none;
     margin-top: 10%;
     margin-bottom: 10%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-weight: 500;
 }
 
 .five-day {
@@ -86,5 +113,5 @@ button:hover {
 }
 
 .days {
-    background-color: white;
+    background-color: none;
 }

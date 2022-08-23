@@ -21,7 +21,7 @@ function getRecentSearches() {
         let newButton = document.createElement("button")
         newButton.id = citySearches[i]
         newButton.innerText = citySearches[i]
-        newButton.classList = 'btn btn-secondary'
+        newButton.classList = 'recent-btn'
         buttonContainer.appendChild(newButton)
     }
 
@@ -53,8 +53,8 @@ function getCityWX() {
         // change current weather container background
         let currentWxContainer = document.querySelector("#current-weather")
         currentWxContainer.style.color = "white"
-        currentWxContainer.style.borderRadius = "5px"
-        currentWxContainer.style.backgroundColor = 'rgba(6, 23, 147, 0.5)'
+        currentWxContainer.style.boxShadow = "10px 10px white"
+        currentWxContainer.style.backgroundColor = '#258BF6'
 
         // get current WX data
         let weatherIcon = data.list[0].weather[0].icon
@@ -281,7 +281,7 @@ function handleSearch(e) {
 searchButton.addEventListener('click', getCityWX)
 
 // listen for clicks on parent element of recent search buttons, then fetch
-// recentSearchBtns.addEventListener("click", handleSearch)
+recentSearchBtns.addEventListener("click", handleSearch)
 
 // get items from locl storage
 getRecentSearches()

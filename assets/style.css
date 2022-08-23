@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box
+} 
+
+:root {
+    --btns: #25F67C;
+    --card-border: #30EBE7;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins';
+    background: rgba(0, 0, 0, 0.5) url('images/pyrenees-g1cb71bc45_1920.jpg') no-repeat center;
+    background-blend-mode: darken;
+}
+
+
+header {
+    contain: content;
+    margin-top: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.search-container {
+    border: 5px;
+    border-color: var(--card-border);
+    border-style: solid;
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+button {
+    width:30%;
+    display:block;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 2%;
+}
+
+button:hover {
+    border: 5px;
+    border-color: var(--btns);
+    border-style: solid;
+    color: var(--btns);
+}

@@ -7,10 +7,6 @@
     --borders: #C47CE6;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 /* BACKGROUND VIDEO STYLES */
 #myVideo {
     filter: brightness(40%);
@@ -44,21 +40,23 @@ header {
     width: 50%;
 }
 
-#the-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#top-row {
+    display: flex; 
+    flex-direction: row;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 60px;
 }
 
 .search-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid white;
-    width: 40%;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    border: 2.5px solid var(--borders);
+    width: 45%;
     padding: 20px;
+    margin-bottom: 15px;
 }
 
 .search-section p {
@@ -87,11 +85,45 @@ button:hover {
     border: 5px solid pink;
 }
 
+.recent-searches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+    border-top: 2.5px solid white;
+}
+
+.recent {
+    margin-top: 10px;
+    width: 45%;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2.5px solid white;
+    padding: 5px;
+}
+
+.recent:hover {
+    margin-top: 10px;
+    width: 45%;
+    color: pink;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2.5px solid pink;
+    padding: 5px;
+}
+
 .current-wx {
-    width: 40%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(196,124,230,0.2) 0%, rgba(255,255,255,0.2) 100%);
+    width: 45%;
     padding: 20px;
-    border: 5px solid white;
     margin-bottom: 50px;
+}
+
+.current-wx p {
+    font-size: 20px;
 }
 
 .current-wx img {
@@ -100,14 +132,20 @@ button:hover {
 
 .five-day-wx {
     display: flex;
-    margin-bottom: 150px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 40px 100px 35px;
 }
 
 .wx-cards {
+    background: linear-gradient(0deg, rgba(196,124,230,0.2) 0%, rgba(255,255,255,0.2) 100%);
     width: 20%;
     padding: 20px;
-    margin: 0px 20px 0px 20px;
-    border: 5px solid white;
+    margin-right: 5px;
+}
+
+.wx-cards p {
+    font-size: 20px;
 }
 
 .wx-cards img {

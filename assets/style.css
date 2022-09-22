@@ -94,6 +94,10 @@ button:hover {
     margin-bottom: 50px;
 }
 
+.current-wx img {
+    width: 20%;
+}
+
 .five-day-wx {
     display: flex;
     margin-bottom: 150px;
@@ -104,4 +108,8 @@ button:hover {
     padding: 20px;
     margin: 0px 20px 0px 20px;
     border: 5px solid white;
+}
+
+.wx-cards img {
+    width: 40%;
 }

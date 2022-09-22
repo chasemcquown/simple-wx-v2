@@ -22,6 +22,7 @@ function fetchWX() {
     .then(function(data) {
         document.querySelector(".current-wx").style.display = "";
         document.querySelector(".current-wx h2").innerHTML = data.list[0].name
+        document.querySelector(".current-wx img").src = "assets/icons/" + data.list[0].weather[0].icon + ".png"
         document.querySelector(".current-wx p:nth-child(3)").innerHTML = "Currently: " + data.list[0].weather[0].main
         document.querySelector(".current-wx p:nth-child(4)").innerHTML = "Temp: " + data.list[0].main.temp + " F"
         document.querySelector(".current-wx p:nth-child(5)").innerHTML = "Wind: " + data.list[0].wind.speed + " mph"
@@ -39,27 +40,32 @@ function fetchWX() {
         document.querySelector(".five-day-wx").style.display = "";
         // DAY ONE
         document.querySelector(".five-day-wx div:nth-child(1) h2").innerHTML = data.list[6].dt_txt
+        document.querySelector(".five-day-wx div:nth-child(1) img").src = "assets/icons/" + data.list[6].weather[0].icon + ".png"
         document.querySelector(".five-day-wx div:nth-child(1) p:nth-child(3)").innerHTML = "Temp: " + data.list[6].main.temp + " F"
         document.querySelector(".five-day-wx div:nth-child(1) p:nth-child(4)").innerHTML = "Wind: " + data.list[6].wind.speed + " mph"
         document.querySelector(".five-day-wx div:nth-child(1) p:nth-child(5)").innerHTML = "Humidity " + data.list[6].main.humidity  + "%"
         // DAY TWO
         document.querySelector(".five-day-wx div:nth-child(2) h2").innerHTML = data.list[14].dt_txt
+        document.querySelector(".five-day-wx div:nth-child(2) img").src = "assets/icons/" + data.list[14].weather[0].icon + ".png"
         document.querySelector(".five-day-wx div:nth-child(2) p:nth-child(3)").innerHTML = "Temp: " + data.list[14].main.temp + " F"
         document.querySelector(".five-day-wx div:nth-child(2) p:nth-child(4)").innerHTML = "Wind: " + data.list[14].wind.speed + " mph"
         document.querySelector(".five-day-wx div:nth-child(2) p:nth-child(5)").innerHTML = "Humidity " + data.list[14].main.humidity  + "%"
         // DAY 3
         document.querySelector(".five-day-wx div:nth-child(3) h2").innerHTML = data.list[22].dt_txt
+        document.querySelector(".five-day-wx div:nth-child(3) img").src = "assets/icons/" + data.list[22].weather[0].icon + ".png"
         document.querySelector(".five-day-wx div:nth-child(3) p:nth-child(3)").innerHTML = "Temp: " + data.list[22].main.temp + " F"
         document.querySelector(".five-day-wx div:nth-child(3) p:nth-child(4)").innerHTML = "Wind: " + data.list[22].wind.speed + " mph"
         document.querySelector(".five-day-wx div:nth-child(3) p:nth-child(5)").innerHTML = "Humidity " + data.list[22].main.humidity  + "%"
         // DAY 4
         document.querySelector(".five-day-wx div:nth-child(4) h2").innerHTML = data.list[30].dt_txt
+        document.querySelector(".five-day-wx div:nth-child(4) img").src = "assets/icons/" + data.list[30].weather[0].icon + ".png"
         document.querySelector(".five-day-wx div:nth-child(4) p:nth-child(3)").innerHTML = "Temp: " + data.list[30].main.temp + " F"
         document.querySelector(".five-day-wx div:nth-child(4) p:nth-child(4)").innerHTML = "Wind: " + data.list[30].wind.speed + " mph"
         document.querySelector(".five-day-wx div:nth-child(4) p:nth-child(5)").innerHTML = "Humidity " + data.list[30].main.humidity  + "%"
         // DAY 5
         document.querySelector(".five-day-wx div:nth-child(5) h2").innerHTML = data.list[38].dt_txt
-        document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(3)").innerHTML = "Temp: " + data.list[39].main.temp + " F"
+        document.querySelector(".five-day-wx div:nth-child(5) img").src = "assets/icons/" + data.list[38].weather[0].icon + ".png"
+        document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(3)").innerHTML = "Temp: " + data.list[38].main.temp + " F"
         document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(4)").innerHTML = "Wind: " + data.list[38].wind.speed + " mph"
         document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(5)").innerHTML = "Humidity " + data.list[38].main.humidity  + "%"
     })

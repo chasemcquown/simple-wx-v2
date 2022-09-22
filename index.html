@@ -13,6 +13,12 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- BACKGROUND-VIDEO -->
+    <video autoplay muted loop playsinline id="myVideo">
+        <source src="assets/images/Lightning Bolt At Night.mp4" type="video/mp4">
+    </video>
+    
     <header>
         <div class="text-center">
             <div class="row align-items-start">
@@ -22,65 +28,68 @@
             </div>
     </header>
 
-    <div class="the-parent">
+    <!-- SEARCH SECTION -->
+    <div id="the-parent">
+        <section class="search-section">
+            <div>
+                <p>Search for a city by name</p>
+                <input type="text">
+                <br>
+                <a href="#scroll-to"><button>get wx</button></a>
+            </div>
+        </section>
 
-        <!-- the search container -->
-        <div class="search-container">
-            <h3>Search by City Name</h3>
-            <form>
-                <div class="mb-3">
-                <input id="city" placeholder="San Diego">
-                </div>
-                <button type="submit" id="search-btn">go!</button>
-            </form>
-            <div id="previous-searches"></div>
-        </div>
+        <!-- CURRENT WX SECTION -->
+        <section id="scroll-to" class="current-wx">
+            <h2 id="city-name">City Name</h2>
+            <p>icon goes here</p>
+            <p>Current conditions</p>
+            <p>Temp</p>
+            <p>Humidity</p>
+            <p>Wind</p>
+        </section>
 
-        <!-- the current condtions container -->
-        <div class="current-conditions" id="current-weather">
-            <img src="" alt="" id="current-conditions-icon">
-            <p id="conditions-description" style="font-size: medium; font-weight: bold;"></p>
-            <p id="current-temp" style="font-size: medium; font-weight: bold;"></p>
-            <p id="current-humidity" style="font-size: medium; font-weight: bold;"></p>
-            <p id="current-wind" style="font-size: medium; font-weight: bold;"></p>
-        </div>
-
-        <!-- the 5 day forecast container -->
-        <div class="five-day">
-            <div class="days">
-                <p id="day-one-date"></p>
-                <!-- <img id="day-one-icon"> -->
-                <p id="day-one-temp"></p>
-                <p id="day-one-wind"></p>
-                <p id="day-one-humidity"></p>
+        <!-- 5 DAY SECTION -->
+        <section class="five-day-wx">
+            <div class="wx-cards">
+                <h2>Date</h2>
+                <p>icon</p>
+                <p>Temp</p>
+                <p>wind</p>
+                <p>humidity</p>
             </div>
-            <div class="days">
-                <p id="day-two-date"></p>
-                <p id="day-two-temp"></p>
-                <p id="day-two-wind"></p>
-                <p id="day-two-humidity"></p>
+            <div class="wx-cards">
+                <h2>Date</h2>
+                <p>icon</p>
+                <p>Temp</p>
+                <p>wind</p>
+                <p>humidity</p>
             </div>
-            <div class="days">
-                <p id="day-three-date"></p>
-                <p id="day-three-temp"></p>
-                <p id="day-three-wind"></p>
-                <p id="day-three-humidity"></p>
+            <div class="wx-cards">
+                <h2>Date</h2>
+                <p>icon</p>
+                <p>Temp</p>
+                <p>wind</p>
+                <p>humidity</p>
             </div>
-            <div class="days">
-                <p id="day-four-date"></p>
-                <p id="day-four-temp"></p>
-                <p id="day-four-wind"></p>
-                <p id="day-four-humidity"></p>
+            <div class="wx-cards">
+                <h2>Date</h2>
+                <p>icon</p>
+                <p>Temp</p>
+                <p>wind</p>
+                <p>humidity</p>
             </div>
-            <div class="days">
-                <p id="day-five-date"></p>
-                <p id="day-five-temp"></p>
-                <p id="day-five-wind"></p>
-                <p id="day-five-humidity"></p>
+            <div class="wx-cards">
+                <h2>Date</h2>
+                <p>icon</p>
+                <p>Temp</p>
+                <p>wind</p>
+                <p>humidity</p>
             </div>
-        </div>
-
+        </section>
     </div>
+
+    
     
 <script src="assets/script.js"></script>
 </body>

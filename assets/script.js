@@ -2,8 +2,8 @@
 const apiKey = "&appid=cf6215d35458f7e05133781f893bec16";
 
 // hide current wx container and five day cards on page load
-// document.querySelector(".current-wx").style.display = "none";
-// document.querySelector(".five-day-wx").style.display = "none";
+document.querySelector(".current-wx").style.display = "none";
+document.querySelector(".five-day-wx").style.display = "none";
 
 function fetchWX() {
 
@@ -78,6 +78,9 @@ function fetchWX() {
         document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(3)").innerHTML = "Temp: " + data.list[38].main.temp + " F"
         document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(4)").innerHTML = "Wind: " + data.list[38].wind.speed + " mph"
         document.querySelector(".five-day-wx div:nth-child(5) p:nth-child(5)").innerHTML = "Humidity: " + data.list[38].main.humidity  + "%"
+
+        // clear value
+        document.querySelector("input").value = '';
     })
 }
 
